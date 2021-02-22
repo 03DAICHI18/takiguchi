@@ -1,2 +1,18 @@
 /* layoutModule */
 /************************************************/
+.ly_header_container {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+.ly_header {
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	width: 200px;
+}
+
+.ly_heade_inner {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding-top: 150px;
+}

@@ -25,3 +25,12 @@ $space_endValue: 15 !default;
 		}
 	}
 }
+
+// 100vh
+.hp_100vh {
+	min-height: calc(var(--vh, 1vh) * 100);
+}
+
+.hp_header_bg {
+	background-color: $bg-color;
+}

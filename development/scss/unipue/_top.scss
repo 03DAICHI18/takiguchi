@@ -1,2 +1,25 @@
 /* トップページ独自のスタイル */
 /************************************************/
+.un_top_bg {
+	background-image: url(../../../public/assets/img/store/store001.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+}
+.un_top_bg::after {
+	background-color: rgba(175, 201, 201, .6);
+	content: "";
+	display: block;
+	height: 200%;
+	position: absolute;
+	right: -20%;
+	top: -10%;
+	transform: rotate(30deg);
+	width: calc(822 / 1200 * 100%);
+}
+
+.un_topHeader_bg {
+	background-color: transparent;
+}

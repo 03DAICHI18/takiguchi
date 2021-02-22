@@ -39,47 +39,24 @@
   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
 
   <!-- 外部ファイル読み込み -->
-  <link rel="stylesheet" href="assets/css/destyle.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/destyle.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-  <div class="un_top_bg">
-    <header class="ly_header un_topHeader_bg hp_100vh">
-      <ul class="ly_heade_inner">
-        <li class="el_header_list"><a href="./principle/principle.html">principle</a></li>
-        <li class="el_header_list"><a href="./profile/profile.html">profile</a></li>
-        <li class="el_header_list"><a href="./news/news.html">news</a></li>
-        <li class="el_header_list"><a href="./menu/menu.html">menu</a></li>
-        <li class="el_header_list"><a href="./access/access.html">access</a></li>
-        <li class="el_header_list">
-          <a href="https://stekina.com/reserve/MPWZ-2VSV/menu" class="el_reserve_btn">reserve</a>
-        </li>
-      </ul>
-    </header>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-  <script src="assets/js/common.js"></script>
-  <script>
-    // 100vh：ios対策
-    const setFillHeight = () => {
-      const vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
-    }
-
-    let vw = window.innerWidth;
-    window.addEventListener('resize', () => {
-      if (vw === window.innerWidth) {
-        // 画面の横幅にサイズ変動がないので処理を終える
-        return;
-      }
-      // 画面の横幅のサイズ変動があった時のみ高さを再計算する
-      vw = window.innerWidth;
-      setFillHeight();
-    });
-    // 初期化
-    setFillHeight();
-  </script>
+  <header class="ly_header hp_header_bg hp_100vh">
+    <ul class="ly_heade_inner">
+      <li class="el_header_list"><a href="../index.html">top</a></li>
+      <li class="el_header_list"><a href="../principle/principle.html">principle</a></li>
+      <li class="el_header_list"><a href="../profile/profile.html">profile</a></li>
+      <li class="el_header_list"><a href="../news/news.html">news</a></li>
+      <li class="el_header_list">menu</li>
+      <li class="el_header_list"><a href="../access/access.html">access</a></li>
+      <li class="el_header_list"><img src="../assets/logo/scissors.svg" alt=""></li>
+      <li class="el_header_list">
+        <a href="https://stekina.com/reserve/MPWZ-2VSV/menu" class="el_reserve_btn">reserve</a>
+      </li>
+    </ul>
+  </header>
+  <div class="el_reserve_btn el_reserve_btn_main"><a href="https://stekina.com/reserve/MPWZ-2VSV/menu">reserve</a></div>
 </body>
 </html>

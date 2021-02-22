@@ -2,11 +2,11 @@
 /* base */
 /************************************************/
 body {
-  overflow-x: hidden;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
   -webkit-animation: fadein 1s forwards;
           animation: fadein 1s forwards;
+  color: #606569;
+  font-family: "Marcellus", "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", sans-serif;
+  overflow-x: hidden;
 }
 
 @-webkit-keyframes fadein {
@@ -28,17 +28,67 @@ body {
 }
 
 img {
-  width: 100%;
   height: auto;
   vertical-align: bottom;
+  width: 100%;
 }
 
 /* layoutModule */
 /************************************************/
+.ly_header_container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.ly_header {
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  width: 200px;
+}
+
+.ly_heade_inner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+}
+
 /* elementModule */
 /************************************************/
+.el_reserve_btn {
+  border: 1px solid #fff;
+  display: inline-block;
+  letter-spacing: .2em;
+  padding: 9px  20px;
+}
+
+.el_reserve_btn::after {
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+  content: "";
+  display: inline-block;
+  height: 6px;
+  margin-left: 10px;
+  -webkit-transform: translateY(-2px) rotate(45deg);
+          transform: translateY(-2px) rotate(45deg);
+  width: 6px;
+}
+
+.el_reserve_btn_main {
+  background-color: #afc9c9;
+  color: #fff;
+}
+
 /* blockModule */
 /************************************************/
+.el_header_list {
+  color: #fff;
+}
+
+.el_header_list:not(:first-of-type) {
+  margin-top: 37px;
+}
+
 /* helperスタイル */
 /************************************************/
 .hp_mt0 {
@@ -169,17 +219,41 @@ img {
   margin-bottom: 150px !important;
 }
 
+.hp_100vh {
+  min-height: calc(var(--vh, 1vh) * 100);
+}
+
+.hp_header_bg {
+  background-color: #afc9c9;
+}
+
 /* トップページ独自のスタイル */
 /************************************************/
-/* xページ独自のスタイル */
-/************************************************/
-/* x2ページ独自のスタイル */
-/************************************************/
-/* x3ページ独自のスタイル */
-/************************************************/
-/* x4ページ独自のスタイル */
-/************************************************/
+.un_top_bg {
+  background-image: url(../../../public/assets/img/store/store001.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.un_top_bg::after {
+  background-color: rgba(175, 201, 201, 0.6);
+  content: "";
+  display: block;
+  height: 200%;
+  position: absolute;
+  right: -20%;
+  top: -10%;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  width: calc(822 / 1200 * 100%);
+}
+
+.un_topHeader_bg {
+  background-color: transparent;
+}
+
 /* js対応スタイル */
-/************************************************/
-/* originalスタイル */
 /************************************************/

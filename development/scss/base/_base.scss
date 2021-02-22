@@ -2,10 +2,10 @@
 /* base */
 /************************************************/
 body {
-	overflow-x: hidden;
+	animation: fadein 1s forwards;
 	color: $baseFont-color;
 	font-family: $fontFamily;
-	animation: fadein 1s forwards;
+	overflow-x: hidden;
 }
 
 @keyframes fadein {
@@ -19,7 +19,7 @@ body {
 }
 
 img {
-	width: 100%;
 	height: auto;
 	vertical-align: bottom;
+	width: 100%;
 }

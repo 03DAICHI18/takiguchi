@@ -1,0 +1,9 @@
+/* blockModule */
+/************************************************/
+.el_header_list {
+	color: #fff;
+}
+
+.el_header_list:not(:first-of-type) {
+	margin-top: 37px;
+}
