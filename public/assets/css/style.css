@@ -41,6 +41,7 @@ img {
 }
 
 .ly_header {
+  z-index: 100;
   letter-spacing: .2em;
   text-transform: uppercase;
   width: 200px;
@@ -87,6 +88,28 @@ img {
 
 .el_header_list:not(:first-of-type) {
   margin-top: 37px;
+}
+
+.bl_slide_container {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+
+.el_slide_list {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.el_slide_list img {
+  font-family: "object-fit: cover;";
+  /*IE対策*/
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* helperスタイル */
@@ -230,10 +253,6 @@ img {
 /* トップページ独自のスタイル */
 /************************************************/
 .un_top_bg {
-  background-image: url(../../../public/assets/img/store/store001.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   overflow: hidden;
   position: relative;
 }

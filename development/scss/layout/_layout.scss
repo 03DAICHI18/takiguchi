@@ -4,7 +4,9 @@
 	margin: 0 auto;
 	max-width: 1200px;
 }
+
 .ly_header {
+	@include z-index(header);
 	letter-spacing: .2em;
 	text-transform: uppercase;
 	width: 200px;

@@ -1,0 +1,18 @@
+.bl_slide_container {
+	@include z-index(topBg);
+	position: absolute;
+	top: 0;
+	width: 100vw;
+}
+.el_slide_list {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+
+	img {
+		font-family: "object-fit: cover;";  /*IE対策*/
+		height: 100%;
+		object-fit: cover;
+	}
+}

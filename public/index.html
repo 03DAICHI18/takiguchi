@@ -58,9 +58,20 @@
         </li>
       </ul>
     </header>
+    <!-- スライダー用 -->
+    <ul class="bl_slide_container hp_100vh">
+      <li class="el_slide_list js_slide_list"><img src="../public/assets/img/store/store001.jpg" alt=""></li>
+      <li class="el_slide_list js_slide_list"><img src="../public/assets/img/store/store002.jpg" alt=""></li>
+      <li class="el_slide_list js_slide_list"><img src="../public/assets/img/store/store003.jpg" alt=""></li>
+      <li class="el_slide_list js_slide_list"><img src="../public/assets/img/store/store004.jpg" alt=""></li>
+    </ul>
+
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script src="assets/js/common.js"></script>
+  <!-- objectFit IE -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.js"></script>
+  <script>objectFitImages();</script>
   <script>
     // 100vh：ios対策
     const setFillHeight = () => {
