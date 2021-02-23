@@ -5,6 +5,7 @@
 	display: inline-block;
 	letter-spacing: .2em;
 	padding: 9px  20px;
+	transition: background-color .3s , color .3s;
 }
 
 .el_reserve_btn::after {
@@ -15,10 +16,60 @@
 	height: 6px;
 	margin-left: 10px;
 	transform: translateY(-2px) rotate(45deg);
+	transition: border .3s , transform .3s;
 	width: 6px;
 }
 
+.el_reserve_btn:hover , .el_reserve_btn:focus {
+	background-color: #fff;
+	color: #000;
+	cursor: pointer;
+}
+
+.el_reserve_btn:hover::after , .el_reserve_btn:focus::after {
+	border-right: 1px solid #000;
+	border-top: 1px solid #000;
+	transform: translatex(6px) translateY(-2px)rotate(45deg);
+}
+
+// メインページ用スタイル
+// ヘッダー内
+.el_reserve_headerBtn {
+	transition: background-color .3s , color .3s;
+}
+
+.el_reserve_headerBtn::after {
+	transition: border .3s , transform .3s;
+}
+
+.el_reserve_headerBtn:hover , .el_reserve_headerBtn:focus {
+	color: $accent-color;
+}
+
+.el_reserve_headerBtn:hover::after , .el_reserve_headerBtn:focus::after {
+	border-right: 1px solid $accent-color;
+	border-top: 1px solid $accent-color;
+	transform: translatex(6px) translateY(-2px)rotate(45deg);
+}
+
+// コンテンツ内
 .el_reserve_btn_main {
-	background-color: #afc9c9;
+	background-color: $accent-color;
 	color: #fff;
+	transition: background-color .3s , color .3s;
+}
+
+.el_reserve_btn_main::after {
+	transition: border .3s , transform .3s;
+}
+
+.el_reserve_btn_main:hover , .el_reserve_btn_main:focus {
+	background-color: #fff;
+	color: $accent-color;
+}
+
+.el_reserve_btn_main:hover::after , .el_reserve_btn_main:focus::after {
+	border-right: 1px solid $accent-color;
+	border-top: 1px solid $accent-color;
+	transform: translatex(6px) translateY(-2px)rotate(45deg);
 }

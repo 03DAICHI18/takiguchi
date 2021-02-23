@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* base */
 /************************************************/
+*:focus {
+	outline: none;
+}
+
 body {
 	animation: fadein 1s forwards;
 	color: $baseFont-color;

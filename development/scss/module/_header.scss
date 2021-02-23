@@ -7,3 +7,40 @@
 .el_header_list:not(:first-of-type) {
 	margin-top: 37px;
 }
+
+.el_header_link {
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+}
+
+.el_header_link::after {
+	background: #fff;
+	bottom: -4px;
+	content: "";
+	height: 2px;
+	left: 0;
+	position: absolute;
+	transform: scale(0, 1);
+	transform-origin: center top;
+	transition: transform .3s;
+	width: 100%;
+}
+
+.el_header_link:hover::after , .el_header_link:focus::after {
+	transform: scale(1, 1);
+}
+
+// ページ現在値
+.el_current {
+	position: relative;
+}
+.el_current::after {
+	background: #fff;
+	bottom: -4px;
+	content: "";
+	height: 2px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
