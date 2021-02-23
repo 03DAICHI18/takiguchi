@@ -233,7 +233,7 @@ img {
     background-color: #afc9c9;
     content: "";
     display: block;
-    height: 100vh;
+    height: 100%;
     left: 0;
     position: absolute;
     top: 0;
@@ -573,6 +573,3 @@ img {
 
 /* js対応スタイル */
 /************************************************/
-body.is_scrollRock {
-  overflow: hidden;
-}
