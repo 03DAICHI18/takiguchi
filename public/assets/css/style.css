@@ -45,9 +45,9 @@ img {
 }
 
 .ly_header {
+  height: 100vh;
   z-index: 100;
   letter-spacing: .2em;
-  text-transform: uppercase;
   transition: -webkit-transform .3s;
   transition: transform .3s;
   transition: transform .3s, -webkit-transform .3s;
@@ -56,8 +56,29 @@ img {
 
 @media screen and (max-width: 980px) {
   .ly_header {
-    -webkit-transform: translateX(-200px);
-            transform: translateX(-200px);
+    position: absolute;
+    -webkit-transform: translateX(-185px);
+            transform: translateX(-185px);
+  }
+}
+
+.ly_columnWrapper {
+  display: flex;
+}
+
+.ly_main_container {
+  position: relative;
+  width: 100%;
+}
+
+.ly_main_inner {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+@media screen and (max-width: 980px) {
+  .ly_main_inner {
+    padding: 0 15px 0 30px;
   }
 }
 
@@ -167,6 +188,10 @@ img {
   text-decoration: none;
 }
 
+.el_header_link:hover {
+  opacity: .7;
+}
+
 .el_header_link::after {
   background: #fff;
   bottom: -4px;
@@ -223,22 +248,6 @@ img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-@media screen and (max-width: 980px) {
-  .el_page_left {
-    position: relative;
-  }
-  .el_page_left::before {
-    background-color: #afc9c9;
-    content: "";
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 16px;
-  }
 }
 
 .bl_hamburgerBtn {
@@ -305,6 +314,20 @@ img {
 .ly_header.is_open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+.el_sec_ttl {
+  color: #afc9c9;
+  font-size: 2rem;
+  letter-spacing: .2em;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.el_copy {
+  display: block;
+  padding: 184px 0 30px;
+  text-align: center;
 }
 
 /* helperスタイル */
@@ -441,8 +464,16 @@ img {
   min-height: calc(var(--vh, 1vh) * 100);
 }
 
+.hp_200vh {
+  min-height: calc(var(--vh, 1vh) * 200);
+}
+
 .hp_header_bg {
   background-color: #afc9c9;
+}
+
+.hp_textTransform {
+  text-transform: uppercase;
 }
 
 /* トップページ独自のスタイル */
@@ -569,6 +600,23 @@ img {
 
 .un_bg_white {
   background-color: #fff;
+}
+
+/* principleページ独自のスタイル */
+/************************************************/
+.un_principle_txt {
+  color: #707070;
+  font-size: 1.125rem;
+  letter-spacing: .2em;
+  line-height: 30px;
+}
+
+.un_principle_txt:first-of-type {
+  margin-top: 100px;
+}
+
+.un_principle_txt:nth-of-type(3) {
+  margin-top: 55px;
 }
 
 /* js対応スタイル */

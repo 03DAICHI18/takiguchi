@@ -6,12 +6,31 @@
 }
 
 .ly_header {
-	@include z-index(header);
+	height: 100vh;
 	@include maxmq(tab) {
-		transform: translateX(-200px);
+		position: absolute;
+		transform: translateX(-185px);
 	}
+	@include z-index(header);
 	letter-spacing: .2em;
-	text-transform: uppercase;
 	transition: transform .3s;
 	width: 200px;
+}
+
+// メインページ共通
+.ly_columnWrapper {
+	display: flex;
+}
+
+.ly_main_container {
+	position: relative; // コピーライト最下部配置のため
+	width: 100%;
+}
+
+.ly_main_inner {
+	@include maxmq(tab) {
+		padding: 0 15px 0 30px;
+	}
+	margin: 0 auto;
+	max-width: 600px;
 }
