@@ -1,5 +1,18 @@
 /* blockModule */
 /************************************************/
+.bl_header_inner {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding-top: 150px;
+}
+
+@include maxmq(tab) {
+	.bl_header_inner {
+		display: none;
+	}
+}
+
 .el_header_list {
 	color: #fff;
 }

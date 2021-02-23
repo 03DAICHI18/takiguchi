@@ -11,16 +11,3 @@
 	text-transform: uppercase;
 	width: 200px;
 }
-
-.ly_heade_inner {
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	padding-top: 150px;
-}
-
-@include maxmq(tab) {
-	.ly_heade_inner {
-		display: none;
-	}
-}

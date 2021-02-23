@@ -4,3 +4,7 @@
 
 
 // （要素の状態を管理するクラス  is_）
+// ハンバーガーメニューオープン時の背景固定
+body.is_scrollRock {
+	overflow: hidden;
+}
