@@ -10,9 +10,14 @@
 
 	&:hover , &:focus {
 		.el_hamburgerBtn_lineTop , .el_hamburgerBtn_lineMiddle , .el_hamburgerBtn_lineBottom {
-			background-color: #afc9c9;
-			box-shadow: 2px 2px 10px #fff;
+			box-shadow: 2px 2px 10px #b0b0b0;
 		}
+	}
+}
+
+@include minmq(tab) {
+	.bl_hamburgerBtn {
+		display: none;
 	}
 }
 
@@ -21,7 +26,7 @@
 }
 
 .el_hamburgerBtn_lineTop , .el_hamburgerBtn_lineMiddle , .el_hamburgerBtn_lineBottom {
-	background-color: #fff;
+	background-color: #000;
 	display: block;
 	height: 1px;
 	transition: transform .3s;
@@ -56,39 +61,6 @@
 
 
 // インナーメニュー
-.bl_header_navWrap {
-	left: 0;
-	position: absolute;
-	top: 0;
-	transition: all .1s;
-	visibility: hidden;
-	width: 100vw;
-}
-
-// オープン時クラス
-.bl_header_navWrap.is_open {
-	background-color: $bg_color;
-	@include z-index(headerMenu);
-	transition: all .5s;
-	visibility: visible;
-}
-
-.bl_header_nav {
-	display: flex;
-	flex-direction: column;
-	left: 50%;
-	position: absolute;
-	top: 45%;
-	transform: translate(-50% , -45%);
-	width: 50%;
-
-	.el_header_navList {
-		margin: auto;
-		text-align: center;
-		width: 100%;
-	}
-	.el_header_navList:nth-of-type(2) {
-		margin-bottom: 70px;
-		margin-top: 70px;
-	}
+.ly_header.is_open {
+	transform: translateX(0);
 }

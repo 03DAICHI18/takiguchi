@@ -33,7 +33,4 @@ $space_endValue: 15 !default;
 
 .hp_header_bg {
 	background-color: $bg-color;
-	@include maxmq(tab) {
-		display: none;
-	}
 }

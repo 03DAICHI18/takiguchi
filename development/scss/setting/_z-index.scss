@@ -2,10 +2,10 @@
 $layer: (
     hamburger : 200,
     header : 100,
-    topLogo : 10,
-    topDecoration: 2,
+    topLogo : 0,
     default : 1,
-    topBg: -1
+    topDecoration: -1,
+    topBg: -2
 );
 // 呼び出し時
 // @include z-index(modal);

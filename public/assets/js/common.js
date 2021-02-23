@@ -53,11 +53,12 @@ jQuery(document).ready(function ($) {
   }
 
   var btn = $('.js_hamburgerBtn_lineTop , .js_hamburgerBtn_lineMiddle  , .js_hamburgerBtn_lineBottom');
-  var navWrap = $('.bl_header_navWrap');
+  var menu = $('.ly_header');
 
   $('.js_hamburgerBtn').on('click', function () {
     btn.toggleClass('is_open');
-    navWrap.toggleClass('is_open');
+    menu.toggleClass('is_open');
+
     if (btn.hasClass('is_open')) {
       sclollRock()
       // $('body').css('padding-right', '17px');

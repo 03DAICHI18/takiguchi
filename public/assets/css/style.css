@@ -48,7 +48,17 @@ img {
   z-index: 100;
   letter-spacing: .2em;
   text-transform: uppercase;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
   width: 200px;
+}
+
+@media screen and (max-width: 980px) {
+  .ly_header {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
 }
 
 /* elementModule */
@@ -143,12 +153,6 @@ img {
   padding-top: 150px;
 }
 
-@media screen and (max-width: 980px) {
-  .bl_header_inner {
-    display: none;
-  }
-}
-
 .el_header_list {
   color: #fff;
 }
@@ -200,7 +204,7 @@ img {
 }
 
 .bl_slide_container {
-  z-index: -1;
+  z-index: -2;
   position: absolute;
   top: 0;
   width: 100vw;
@@ -248,8 +252,13 @@ img {
 }
 
 .bl_hamburgerBtn:hover .el_hamburgerBtn_lineTop, .bl_hamburgerBtn:hover .el_hamburgerBtn_lineMiddle, .bl_hamburgerBtn:hover .el_hamburgerBtn_lineBottom, .bl_hamburgerBtn:focus .el_hamburgerBtn_lineTop, .bl_hamburgerBtn:focus .el_hamburgerBtn_lineMiddle, .bl_hamburgerBtn:focus .el_hamburgerBtn_lineBottom {
-  background-color: #afc9c9;
-  box-shadow: 2px 2px 10px #fff;
+  box-shadow: 2px 2px 10px #b0b0b0;
+}
+
+@media screen and (min-width: 980px) {
+  .bl_hamburgerBtn {
+    display: none;
+  }
 }
 
 .el_hamburgerBtn_line:not(:last-of-type) {
@@ -257,7 +266,7 @@ img {
 }
 
 .el_hamburgerBtn_lineTop, .el_hamburgerBtn_lineMiddle, .el_hamburgerBtn_lineBottom {
-  background-color: #fff;
+  background-color: #000;
   display: block;
   height: 1px;
   transition: -webkit-transform .3s;
@@ -293,41 +302,9 @@ img {
   width: 30px;
 }
 
-.bl_header_navWrap {
-  left: 0;
-  position: absolute;
-  top: 0;
-  transition: all .1s;
-  visibility: hidden;
-  width: 100vw;
-}
-
-.bl_header_navWrap.is_open {
-  background-color: #afc9c9;
-  transition: all .5s;
-  visibility: visible;
-}
-
-.bl_header_nav {
-  display: flex;
-  flex-direction: column;
-  left: 50%;
-  position: absolute;
-  top: 45%;
-  -webkit-transform: translate(-50%, -45%);
-          transform: translate(-50%, -45%);
-  width: 50%;
-}
-
-.bl_header_nav .el_header_navList {
-  margin: auto;
-  text-align: center;
-  width: 100%;
-}
-
-.bl_header_nav .el_header_navList:nth-of-type(2) {
-  margin-bottom: 70px;
-  margin-top: 70px;
+.ly_header.is_open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 /* helperスタイル */
@@ -468,12 +445,6 @@ img {
   background-color: #afc9c9;
 }
 
-@media screen and (max-width: 980px) {
-  .hp_header_bg {
-    display: none;
-  }
-}
-
 /* トップページ独自のスタイル */
 /************************************************/
 .un_top_bg {
@@ -482,11 +453,11 @@ img {
 }
 
 .un_top_bg::after {
-  background-color: rgba(175, 201, 201, 0.6);
+  background-color: rgba(175, 201, 201, 0.4);
   content: "";
   display: block;
   height: 200%;
-  z-index: 2;
+  z-index: -1;
   position: absolute;
   right: -15%;
   top: -10%;
@@ -498,7 +469,7 @@ img {
 @media screen and (max-width: 980px) {
   .un_top_bg::after {
     background-color: transparent;
-    border-color: transparent transparent rgba(175, 201, 201, 0.6) transparent;
+    border-color: transparent transparent rgba(175, 201, 201, 0.4) transparent;
     border-style: solid;
     border-width: 0 0 100vh 80vw;
     height: 0;
@@ -512,8 +483,16 @@ img {
   }
 }
 
-.un_topHeader_bg {
-  background-color: transparent;
+@media screen and (min-width: 980px) {
+  .un_topHeader_bg {
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .un_topHeader_bg {
+    background-color: #afc9c9;
+  }
 }
 
 .un_logo_container {
@@ -521,7 +500,7 @@ img {
   border: 4px solid #fff;
   display: flex;
   height: 400px;
-  z-index: 10;
+  z-index: 0;
   justify-content: center;
   left: 50%;
   position: absolute;
@@ -582,6 +561,14 @@ img {
 
 .un_logo img {
   height: 100%;
+}
+
+.un_hamburgerBtn:hover .el_hamburgerBtn_lineTop, .un_hamburgerBtn:hover .el_hamburgerBtn_lineMiddle, .un_hamburgerBtn:hover .el_hamburgerBtn_lineBottom, .un_hamburgerBtn:focus .el_hamburgerBtn_lineTop, .un_hamburgerBtn:focus .el_hamburgerBtn_lineMiddle, .un_hamburgerBtn:focus .el_hamburgerBtn_lineBottom {
+  box-shadow: 2px 5px 10px #fff;
+}
+
+.un_bg_white {
+  background-color: #fff;
 }
 
 /* js対応スタイル */

@@ -28,9 +28,6 @@
   <!-- Facebook -->
   <meta property="fb:app_id" content="" /> <!-- facebook app_idを記述 -->
 
-  <!-- Googleアナリティクス -->
-  <meta name="" content="" />
-
   <!-- タイトルタグ ※35文字程度  -->
   <title>滝口三奈美 official HP</title>
 
@@ -58,7 +55,38 @@
         </li>
       </ul>
     </header>
+    <!-- ハンバーガーボタン -->
+    <button type="button" class="bl_hamburgerBtn js_hamburgerBtn">
+      <span class="el_hamburgerBtn_line el_hamburgerBtn_lineTop js_hamburgerBtn_lineTop"></span>
+      <span class="el_hamburgerBtn_line el_hamburgerBtn_lineMiddle js_hamburgerBtn_lineMiddle"></span>
+      <span class="el_hamburgerBtn_line el_hamburgerBtn_lineBottom js_hamburgerBtn_lineBottom"></span>
+    </button>
   </div>
-  <div class="el_reserve_btn el_reserve_btn_main"><a href="https://stekina.com/reserve/MPWZ-2VSV/menu">reserve</a></div>
+  <!-- <div class="el_reserve_btn el_reserve_btn_main"><a href="https://stekina.com/reserve/MPWZ-2VSV/menu">reserve</a></div> -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="../assets/js/common.js"></script>
+  <!-- objectFit IE -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.js"></script>
+  <script>objectFitImages();</script>
+  <script>
+    // 100vh：ios対策
+    const setFillHeight = () => {
+      const vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
+
+    let vw = window.innerWidth;
+    window.addEventListener('resize', () => {
+      if (vw === window.innerWidth) {
+        // 画面の横幅にサイズ変動がないので処理を終える
+        return;
+      }
+      // 画面の横幅のサイズ変動があった時のみ高さを再計算する
+      vw = window.innerWidth;
+      setFillHeight();
+    });
+    // 初期化
+    setFillHeight();
+  </script>
 </body>
 </html>

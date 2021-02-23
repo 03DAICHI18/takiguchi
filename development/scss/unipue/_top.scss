@@ -7,14 +7,14 @@
 }
 
 .un_top_bg::after {
-	background-color: rgba(175, 201, 201, .6);
+	background-color: rgba(175, 201, 201, .4);
 	content: "";
 	display: block;
 	height: 200%;
 	@include z-index(topDecoration);
 	@include maxmq(tab) {
 		background-color: transparent;
-		border-color: transparent transparent rgba(175, 201, 201, .6) transparent;
+		border-color: transparent transparent rgba(175, 201, 201, .4) transparent;
 		border-style: solid;
 		border-width: 0 0 100vh 80vw;
 		height: 0;
@@ -34,7 +34,12 @@
 
 // ヘッダー背景色透過
 .un_topHeader_bg {
-	background-color: transparent;
+	@include minmq(tab) {
+		background-color: transparent;
+	}
+	@include maxmq(tab) {
+		background-color: $accent-color;
+	}
 }
 
 // ロゴ
@@ -88,4 +93,18 @@
 	img {
 		height: 100%;
 	}
+}
+
+
+// ハンバーガーボタン通常時
+.un_hamburgerBtn {
+	&:hover , &:focus {
+		.el_hamburgerBtn_lineTop , .el_hamburgerBtn_lineMiddle , .el_hamburgerBtn_lineBottom {
+			box-shadow: 2px 5px 10px #fff;
+		}
+	}
+}
+
+.un_bg_white {
+	background-color: #fff;
 }
