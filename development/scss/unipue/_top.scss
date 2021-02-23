@@ -5,12 +5,26 @@
 	overflow: hidden;
 	position: relative;
 }
+
 .un_top_bg::after {
 	background-color: rgba(175, 201, 201, .6);
 	content: "";
 	display: block;
 	height: 200%;
 	@include z-index(topDecoration);
+	@include maxmq(tab) {
+		background-color: transparent;
+		border-color: transparent transparent rgba(175, 201, 201, .6) transparent;
+		border-style: solid;
+		border-width: 0 0 100vh 80vw;
+		height: 0;
+		overflow: hidden;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transform: rotate(0);
+		width: 0;
+	}
 	position: absolute;
 	right: -15%;
 	top: -10%;

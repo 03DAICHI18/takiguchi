@@ -1,0 +1,15 @@
+@include maxmq(tab) {
+	.el_page_left {
+		position: relative;
+	}
+	.el_page_left::before {
+		background-color: $accent-color;
+		content: "";
+		display: block;
+		height: 100vh;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 16px;
+	}
+}

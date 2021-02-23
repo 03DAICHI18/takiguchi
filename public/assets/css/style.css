@@ -58,6 +58,12 @@ img {
   padding-top: 150px;
 }
 
+@media screen and (max-width: 980px) {
+  .ly_heade_inner {
+    display: none;
+  }
+}
+
 /* elementModule */
 /************************************************/
 .el_reserve_btn {
@@ -215,6 +221,22 @@ img {
      object-fit: cover;
 }
 
+@media screen and (max-width: 980px) {
+  .el_page_left {
+    position: relative;
+  }
+  .el_page_left::before {
+    background-color: #afc9c9;
+    content: "";
+    display: block;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 16px;
+  }
+}
+
 /* helperスタイル */
 /************************************************/
 .hp_mt0 {
@@ -353,6 +375,12 @@ img {
   background-color: #afc9c9;
 }
 
+@media screen and (max-width: 980px) {
+  .hp_header_bg {
+    display: none;
+  }
+}
+
 /* トップページ独自のスタイル */
 /************************************************/
 .un_top_bg {
@@ -372,6 +400,23 @@ img {
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
   width: calc(822 / 1200 * 100%);
+}
+
+@media screen and (max-width: 980px) {
+  .un_top_bg::after {
+    background-color: transparent;
+    border-color: transparent transparent rgba(175, 201, 201, 0.6) transparent;
+    border-style: solid;
+    border-width: 0 0 100vh 80vw;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    width: 0;
+  }
 }
 
 .un_topHeader_bg {

@@ -18,3 +18,9 @@
 	flex-direction: column;
 	padding-top: 150px;
 }
+
+@include maxmq(tab) {
+	.ly_heade_inner {
+		display: none;
+	}
+}
