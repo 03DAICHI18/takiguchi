@@ -1,6 +1,9 @@
 .el_sec_ttl {
 	color: $accent-color;
 	font-size: rem(32);
+	@include maxmq(sp) {
+		font-size: rem(24);
+	}
 	letter-spacing: .2em;
 	margin-top: 100px;
 	text-align: center;

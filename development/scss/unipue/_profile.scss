@@ -30,7 +30,7 @@
 
 .un_profile_txtBlock {
 	display: flex;
-	flex-basis: 200px;
+	flex-basis: 250px;
 	flex-direction: column;
 	justify-content: space-between;
 }
@@ -43,13 +43,13 @@
 }
 .un_profile_name::after {
 	content: "Takiguchi Minami";
+	display: block;
 	font-size: rem(14);
 	letter-spacing: .1em;
 	line-height: calc(28 / 14 * 100%);
 }
 
 .un_instagram_btn {
-	text-align: center;
 	text-transform: capitalize;
 }
 
@@ -66,13 +66,20 @@
 	.un_profile_txtBlock {
 		margin-top: 66px;
 	}
-	.un_profile_name::after {
-		display: block;
-	}
 	.un_profile_txt {
 		margin-top: 80px;
 	}
 	.un_instagram_btn {
 		margin-top: 80px;
 	}
+}
+
+.un_profile_txt {
+	font-size: rem(16);
+	@include maxmq(sp) {
+		font-size: rem(14);
+		line-height: calc(30 / 16 * 100%);
+	}
+	letter-spacing: .2em;
+	line-height: calc(30 / 18 * 100%);
 }

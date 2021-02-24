@@ -12,6 +12,9 @@
 .un_principle_txt {
 	color: #707070;
 	font-size: rem(18);
+	@include maxmq(sp) {
+		font-size: rem(14);
+	}
 	letter-spacing: .2em;
 	line-height: 30px;
 }

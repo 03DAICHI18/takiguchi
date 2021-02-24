@@ -78,6 +78,7 @@ img {
   display: inline-block;
   letter-spacing: .2em;
   padding: 9px  20px;
+  text-align: center;
   transition: background-color .3s , color .3s;
 }
 
@@ -311,6 +312,12 @@ img {
   letter-spacing: .2em;
   margin-top: 100px;
   text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .el_sec_ttl {
+    font-size: 1.5rem;
+  }
 }
 
 .el_copy {
@@ -611,6 +618,12 @@ img {
   line-height: 30px;
 }
 
+@media screen and (max-width: 480px) {
+  .un_principle_txt {
+    font-size: 0.875rem;
+  }
+}
+
 .un_principle_txt:first-of-type {
   margin-top: 100px;
 }
@@ -660,7 +673,7 @@ img {
 
 .un_profile_txtBlock {
   display: flex;
-  flex-basis: 200px;
+  flex-basis: 250px;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -674,13 +687,13 @@ img {
 
 .un_profile_name::after {
   content: "Takiguchi Minami";
+  display: block;
   font-size: 0.875rem;
   letter-spacing: .1em;
   line-height: calc(28 / 14 * 100%);
 }
 
 .un_instagram_btn {
-  text-align: center;
   text-transform: capitalize;
 }
 
@@ -696,14 +709,24 @@ img {
   .un_profile_txtBlock {
     margin-top: 66px;
   }
-  .un_profile_name::after {
-    display: block;
-  }
   .un_profile_txt {
     margin-top: 80px;
   }
   .un_instagram_btn {
     margin-top: 80px;
+  }
+}
+
+.un_profile_txt {
+  font-size: 1rem;
+  letter-spacing: .2em;
+  line-height: calc(30 / 18 * 100%);
+}
+
+@media screen and (max-width: 480px) {
+  .un_profile_txt {
+    font-size: 0.875rem;
+    line-height: calc(30 / 16 * 100%);
   }
 }
 
