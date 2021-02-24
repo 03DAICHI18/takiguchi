@@ -9,7 +9,7 @@ body {
   -webkit-animation: fadein 1s forwards;
           animation: fadein 1s forwards;
   color: #606569;
-  font-family: "Marcellus", "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", sans-serif;
+  font-family: "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", sans-serif;
   overflow-x: hidden;
 }
 
@@ -29,6 +29,10 @@ body {
   100% {
     opacity: 100%;
   }
+}
+
+header {
+  font-family: "Optima","Roman",serif;
 }
 
 img {
@@ -76,6 +80,7 @@ img {
 .el_btn {
   border: 1px solid #fff;
   display: inline-block;
+  font-family: "Optima","Roman",serif;
   letter-spacing: .2em;
   padding: 9px  20px;
   text-align: center;
@@ -121,12 +126,12 @@ img {
 }
 
 .el_headerBtn:hover, .el_headerBtn:focus {
-  color: #afc9c9;
+  color: #606569;
 }
 
 .el_headerBtn:hover::after, .el_headerBtn:focus::after {
-  border-right: 1px solid #afc9c9;
-  border-top: 1px solid #afc9c9;
+  border-right: 1px solid #606569;
+  border-top: 1px solid #606569;
   -webkit-transform: translatex(6px) translateY(-2px) rotate(45deg);
           transform: translatex(6px) translateY(-2px) rotate(45deg);
 }
@@ -178,12 +183,12 @@ img {
   text-decoration: none;
 }
 
-.el_header_link:hover {
-  opacity: .7;
+.el_header_link:hover, .el_header_link:focus {
+  color: #606569;
 }
 
 .el_header_link::after {
-  background: #fff;
+  background: #606569;
   bottom: -4px;
   content: "";
   height: 2px;
@@ -205,17 +210,16 @@ img {
 }
 
 .el_current {
+  color: #606569;
   position: relative;
 }
 
-.el_current::after {
+.un_top_bg .el_header_link:hover, .un_top_bg .el_header_link:focus {
+  color: #fff;
+}
+
+.un_top_bg .el_header_link::after {
   background: #fff;
-  bottom: -4px;
-  content: "";
-  height: 2px;
-  left: 0;
-  position: absolute;
-  width: 100%;
 }
 
 .bl_slide_container {
@@ -308,6 +312,7 @@ img {
 
 .el_sec_ttl {
   color: #afc9c9;
+  font-family: "Optima","Roman",serif;
   font-size: 2rem;
   letter-spacing: .2em;
   margin-top: 100px;

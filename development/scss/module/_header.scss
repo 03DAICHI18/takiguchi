@@ -20,12 +20,13 @@
 	position: relative;
 	text-decoration: none;
 }
-.el_header_link:hover {
-	opacity: .7;
+
+.el_header_link:hover , .el_header_link:focus {
+	color: #606569;
 }
 
 .el_header_link::after {
-	background: #fff;
+	background: #606569;
 	bottom: -4px;
 	content: "";
 	height: 2px;
@@ -43,14 +44,16 @@
 
 // ページ現在値
 .el_current {
+	color: #606569;
 	position: relative;
 }
-.el_current::after {
+
+// *******************************
+// トップページのみ
+.un_top_bg .el_header_link:hover , .un_top_bg  .el_header_link:focus {
+	color: #fff;
+}
+
+.un_top_bg  .el_header_link::after {
 	background: #fff;
-	bottom: -4px;
-	content: "";
-	height: 2px;
-	left: 0;
-	position: absolute;
-	width: 100%;
 }

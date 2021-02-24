@@ -3,6 +3,7 @@
 .el_btn {
 	border: 1px solid #fff;
 	display: inline-block;
+	font-family: "Optima","Roman",serif;
 	letter-spacing: .2em;
 	padding: 9px  20px;
 	text-align: center;
@@ -44,12 +45,12 @@
 }
 
 .el_headerBtn:hover , .el_headerBtn:focus {
-	color: $accent-color;
+	color: #606569;
 }
 
 .el_headerBtn:hover::after , .el_headerBtn:focus::after {
-	border-right: 1px solid $accent-color;
-	border-top: 1px solid $accent-color;
+	border-right: 1px solid #606569;
+	border-top: 1px solid #606569;
 	transform: translatex(6px) translateY(-2px)rotate(45deg);
 }
 
