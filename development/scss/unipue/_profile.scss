@@ -1,0 +1,78 @@
+/* profileページ独自のスタイル */
+/************************************************/
+.un_profile_inner {
+	@include maxmq(tab) {
+		padding: 0 15px 0 30px;
+	}
+	margin: 0 auto;
+	max-width: 600px;
+}
+
+.un_profile_block {
+	display: flex;
+	@include maxmq(tab) {
+		margin-top: 58px;
+	}
+	justify-content: space-between;
+	margin-top: 94px;
+}
+
+.un_profile_img {
+	flex-basis: 267px;
+	flex-shrink: 0;
+	height: 352px;
+	img {
+		font-family: "object-fit: cover;";  /*IE対策*/
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.un_profile_txtBlock {
+	display: flex;
+	flex-basis: 200px;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.un_profile_name {
+	font-size: rem(24);
+	letter-spacing: .2em;
+	line-height: calc(38 / 24 * 100%);
+	text-align: center;
+}
+.un_profile_name::after {
+	content: "Takiguchi Minami";
+	font-size: rem(14);
+	letter-spacing: .1em;
+	line-height: calc(28 / 14 * 100%);
+}
+
+.un_instagram_btn {
+	text-align: center;
+	text-transform: capitalize;
+}
+
+// メディアクエリ（600px以下）
+@media screen and (max-width: 600px) {
+	.un_profile_inner {
+		max-width: 250px;
+		padding: 0;
+	}
+	.un_profile_block {
+		display: flex;
+		flex-direction: column;
+	}
+	.un_profile_txtBlock {
+		margin-top: 66px;
+	}
+	.un_profile_name::after {
+		display: block;
+	}
+	.un_profile_txt {
+		margin-top: 80px;
+	}
+	.un_instagram_btn {
+		margin-top: 80px;
+	}
+}

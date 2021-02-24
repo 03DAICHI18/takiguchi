@@ -71,20 +71,9 @@ img {
   width: 100%;
 }
 
-.ly_main_inner {
-  margin: 0 auto;
-  max-width: 600px;
-}
-
-@media screen and (max-width: 980px) {
-  .ly_main_inner {
-    padding: 0 15px 0 30px;
-  }
-}
-
 /* elementModule */
 /************************************************/
-.el_reserve_btn {
+.el_btn {
   border: 1px solid #fff;
   display: inline-block;
   letter-spacing: .2em;
@@ -92,7 +81,7 @@ img {
   transition: background-color .3s , color .3s;
 }
 
-.el_reserve_btn::after {
+.el_btn::after {
   border-right: 1px solid #fff;
   border-top: 1px solid #fff;
   content: "";
@@ -107,58 +96,58 @@ img {
   width: 6px;
 }
 
-.el_reserve_btn:hover, .el_reserve_btn:focus {
+.el_btn:hover, .el_btn:focus {
   background-color: #fff;
   color: #000;
   cursor: pointer;
 }
 
-.el_reserve_btn:hover::after, .el_reserve_btn:focus::after {
+.el_btn:hover::after, .el_btn:focus::after {
   border-right: 1px solid #000;
   border-top: 1px solid #000;
   -webkit-transform: translatex(6px) translateY(-2px) rotate(45deg);
           transform: translatex(6px) translateY(-2px) rotate(45deg);
 }
 
-.el_reserve_headerBtn {
+.el_headerBtn {
   transition: background-color .3s , color .3s;
 }
 
-.el_reserve_headerBtn::after {
+.el_headerBtn::after {
   transition: border .3s , -webkit-transform .3s;
   transition: border .3s , transform .3s;
   transition: border .3s , transform .3s , -webkit-transform .3s;
 }
 
-.el_reserve_headerBtn:hover, .el_reserve_headerBtn:focus {
+.el_headerBtn:hover, .el_headerBtn:focus {
   color: #afc9c9;
 }
 
-.el_reserve_headerBtn:hover::after, .el_reserve_headerBtn:focus::after {
+.el_headerBtn:hover::after, .el_headerBtn:focus::after {
   border-right: 1px solid #afc9c9;
   border-top: 1px solid #afc9c9;
   -webkit-transform: translatex(6px) translateY(-2px) rotate(45deg);
           transform: translatex(6px) translateY(-2px) rotate(45deg);
 }
 
-.el_reserve_btn_main {
+.el_btn_main {
   background-color: #afc9c9;
   color: #fff;
   transition: background-color .3s , color .3s;
 }
 
-.el_reserve_btn_main::after {
+.el_btn_main::after {
   transition: border .3s , -webkit-transform .3s;
   transition: border .3s , transform .3s;
   transition: border .3s , transform .3s , -webkit-transform .3s;
 }
 
-.el_reserve_btn_main:hover, .el_reserve_btn_main:focus {
+.el_btn_main:hover, .el_btn_main:focus {
   background-color: #fff;
   color: #afc9c9;
 }
 
-.el_reserve_btn_main:hover::after, .el_reserve_btn_main:focus::after {
+.el_btn_main:hover::after, .el_btn_main:focus::after {
   border-right: 1px solid #afc9c9;
   border-top: 1px solid #afc9c9;
   -webkit-transform: translatex(6px) translateY(-2px) rotate(45deg);
@@ -469,7 +458,7 @@ img {
 }
 
 .hp_header_bg {
-  background-color: #afc9c9;
+  background-color: rgba(175, 201, 201, 0.95);
 }
 
 .hp_textTransform {
@@ -522,7 +511,7 @@ img {
 
 @media screen and (max-width: 980px) {
   .un_topHeader_bg {
-    background-color: #afc9c9;
+    background-color: rgba(175, 201, 201, 0.97);
   }
 }
 
@@ -604,6 +593,17 @@ img {
 
 /* principleページ独自のスタイル */
 /************************************************/
+.un_principle_inner {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+@media screen and (max-width: 980px) {
+  .un_principle_inner {
+    padding: 0 15px 0 30px;
+  }
+}
+
 .un_principle_txt {
   color: #707070;
   font-size: 1.125rem;
@@ -617,6 +617,94 @@ img {
 
 .un_principle_txt:nth-of-type(3) {
   margin-top: 55px;
+}
+
+/* profileページ独自のスタイル */
+/************************************************/
+.un_profile_inner {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+@media screen and (max-width: 980px) {
+  .un_profile_inner {
+    padding: 0 15px 0 30px;
+  }
+}
+
+.un_profile_block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 94px;
+}
+
+@media screen and (max-width: 980px) {
+  .un_profile_block {
+    margin-top: 58px;
+  }
+}
+
+.un_profile_img {
+  flex-basis: 267px;
+  flex-shrink: 0;
+  height: 352px;
+}
+
+.un_profile_img img {
+  font-family: "object-fit: cover;";
+  /*IE対策*/
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.un_profile_txtBlock {
+  display: flex;
+  flex-basis: 200px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.un_profile_name {
+  font-size: 1.5rem;
+  letter-spacing: .2em;
+  line-height: calc(38 / 24 * 100%);
+  text-align: center;
+}
+
+.un_profile_name::after {
+  content: "Takiguchi Minami";
+  font-size: 0.875rem;
+  letter-spacing: .1em;
+  line-height: calc(28 / 14 * 100%);
+}
+
+.un_instagram_btn {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 600px) {
+  .un_profile_inner {
+    max-width: 250px;
+    padding: 0;
+  }
+  .un_profile_block {
+    display: flex;
+    flex-direction: column;
+  }
+  .un_profile_txtBlock {
+    margin-top: 66px;
+  }
+  .un_profile_name::after {
+    display: block;
+  }
+  .un_profile_txt {
+    margin-top: 80px;
+  }
+  .un_instagram_btn {
+    margin-top: 80px;
+  }
 }
 
 /* js対応スタイル */

@@ -1,6 +1,6 @@
 /* elementModule */
 /************************************************/
-.el_reserve_btn {
+.el_btn {
 	border: 1px solid #fff;
 	display: inline-block;
 	letter-spacing: .2em;
@@ -8,7 +8,7 @@
 	transition: background-color .3s , color .3s;
 }
 
-.el_reserve_btn::after {
+.el_btn::after {
 	border-right: 1px solid #fff;
 	border-top: 1px solid #fff;
 	content: "";
@@ -20,13 +20,13 @@
 	width: 6px;
 }
 
-.el_reserve_btn:hover , .el_reserve_btn:focus {
+.el_btn:hover , .el_btn:focus {
 	background-color: #fff;
 	color: #000;
 	cursor: pointer;
 }
 
-.el_reserve_btn:hover::after , .el_reserve_btn:focus::after {
+.el_btn:hover::after , .el_btn:focus::after {
 	border-right: 1px solid #000;
 	border-top: 1px solid #000;
 	transform: translatex(6px) translateY(-2px)rotate(45deg);
@@ -34,41 +34,41 @@
 
 // メインページ用スタイル
 // ヘッダー内
-.el_reserve_headerBtn {
+.el_headerBtn {
 	transition: background-color .3s , color .3s;
 }
 
-.el_reserve_headerBtn::after {
+.el_headerBtn::after {
 	transition: border .3s , transform .3s;
 }
 
-.el_reserve_headerBtn:hover , .el_reserve_headerBtn:focus {
+.el_headerBtn:hover , .el_headerBtn:focus {
 	color: $accent-color;
 }
 
-.el_reserve_headerBtn:hover::after , .el_reserve_headerBtn:focus::after {
+.el_headerBtn:hover::after , .el_headerBtn:focus::after {
 	border-right: 1px solid $accent-color;
 	border-top: 1px solid $accent-color;
 	transform: translatex(6px) translateY(-2px)rotate(45deg);
 }
 
 // コンテンツ内
-.el_reserve_btn_main {
+.el_btn_main {
 	background-color: $accent-color;
 	color: #fff;
 	transition: background-color .3s , color .3s;
 }
 
-.el_reserve_btn_main::after {
+.el_btn_main::after {
 	transition: border .3s , transform .3s;
 }
 
-.el_reserve_btn_main:hover , .el_reserve_btn_main:focus {
+.el_btn_main:hover , .el_btn_main:focus {
 	background-color: #fff;
 	color: $accent-color;
 }
 
-.el_reserve_btn_main:hover::after , .el_reserve_btn_main:focus::after {
+.el_btn_main:hover::after , .el_btn_main:focus::after {
 	border-right: 1px solid $accent-color;
 	border-top: 1px solid $accent-color;
 	transform: translatex(6px) translateY(-2px)rotate(45deg);

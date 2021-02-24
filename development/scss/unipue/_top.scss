@@ -38,7 +38,7 @@
 		background-color: transparent;
 	}
 	@include maxmq(tab) {
-		background-color: $accent-color;
+		background-color: rgba(175, 201, 201, .97);
 	}
 }
 

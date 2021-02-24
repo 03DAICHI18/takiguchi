@@ -26,11 +26,3 @@
 	position: relative; // コピーライト最下部配置のため
 	width: 100%;
 }
-
-.ly_main_inner {
-	@include maxmq(tab) {
-		padding: 0 15px 0 30px;
-	}
-	margin: 0 auto;
-	max-width: 600px;
-}

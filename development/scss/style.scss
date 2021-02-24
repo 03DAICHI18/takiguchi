@@ -17,8 +17,8 @@
 // layout：サイトレイアウトのスタイル  （ly_）
 @import "layout/layout";
 
-// blockmodule：エレメント集合ブロック  （bl_）
-@import "module/reserve";
+// module：エレメント集合ブロック
+@import "module/_btn";
 @import "module/header";
 @import "module/slider";
 @import "module/hamburger";
@@ -31,6 +31,7 @@
 // unipue：ある1ページでしか使用されないスタイル  （un_）
 @import "unipue/top";
 @import "unipue/principle";
+@import "unipue/profile";
 
 // program：js等のプログラムに対応するスタイル  
 // （jsで要素を取得させるクラス  js_）

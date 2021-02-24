@@ -1,5 +1,14 @@
 /* principleページ独自のスタイル */
 /************************************************/
+.un_principle_inner {
+	@include maxmq(tab) {
+		padding: 0 15px 0 30px;
+	}
+	margin: 0 auto;
+	max-width: 600px;
+}
+
+
 .un_principle_txt {
 	color: #707070;
 	font-size: rem(18);
@@ -12,7 +21,4 @@
 }
 .un_principle_txt:nth-of-type(3) {
 	margin-top: 55px;
-}
-.un_principle_txt:last-of-type {
-	// margin-bottom: 184px;
 }
