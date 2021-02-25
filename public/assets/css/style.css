@@ -9,7 +9,7 @@ body {
   -webkit-animation: fadein 1s forwards;
           animation: fadein 1s forwards;
   color: #606569;
-  font-family: "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", sans-serif;
+  font-family: "Noto Serif JP", serif;
   overflow-x: hidden;
 }
 
@@ -49,6 +49,7 @@ img {
 }
 
 .ly_header {
+  font-family: "Marcellus", serif;
   height: 100vh;
   z-index: 100;
   letter-spacing: .2em;
@@ -312,7 +313,7 @@ img {
 
 .el_sec_ttl {
   color: #afc9c9;
-  font-family: "Optima","Roman",serif;
+  font-family: "Marcellus", serif;
   font-size: 2rem;
   letter-spacing: .2em;
   margin-top: 100px;
@@ -531,6 +532,7 @@ img {
   align-items: center;
   border: 4px solid #fff;
   display: flex;
+  font-family: "Marcellus", serif;
   height: 400px;
   z-index: 0;
   justify-content: center;
@@ -588,6 +590,12 @@ img {
 @media screen and (max-width: 1200px) {
   .un_logo {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .un_logo {
+    height: 190px;
   }
 }
 

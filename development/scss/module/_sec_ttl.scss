@@ -1,6 +1,6 @@
 .el_sec_ttl {
 	color: $accent-color;
-	font-family: "Optima","Roman",serif;
+	font-family: $font_en;
 	font-size: rem(32);
 	@include maxmq(sp) {
 		font-size: rem(24);

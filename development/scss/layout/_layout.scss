@@ -6,6 +6,7 @@
 }
 
 .ly_header {
+	font-family: $font_en;
 	height: 100vh;
 	@include maxmq(tab) {
 		position: absolute;
