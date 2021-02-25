@@ -4,7 +4,7 @@
 	height: 47px;
 	@include z-index(hamburger);
 	left: 30px;
-	position: absolute;
+	position: fixed;
 	top: 30px;
 	width: 47px;
 
@@ -57,10 +57,4 @@
 .el_hamburgerBtn_lineBottom.is_open {
 	transform: rotate(-225deg) translatex(-6px) translateY(11px);
 	width: 30px;
-}
-
-
-// インナーメニュー
-.ly_header.is_open {
-	transform: translateX(0);
 }

@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /* base */
 /************************************************/
-*:focus {
-  outline: none;
+html {
+  height: 100%;
 }
 
 body {
@@ -10,7 +10,15 @@ body {
           animation: fadein 1s forwards;
   color: #606569;
   font-family: "Noto Serif JP", serif;
+  height: 100%;
   overflow-x: hidden;
+}
+
+@media screen and (max-width: 980px) {
+  body {
+    background-image: url(../../../public/assets/img/bg.svg);
+    background-repeat: repeat-y;
+  }
 }
 
 @-webkit-keyframes fadein {
@@ -49,10 +57,11 @@ img {
 }
 
 .ly_header {
-  font-family: "Marcellus", serif;
-  height: 100vh;
+  background-color: #afc9c9;
+  height: 100%;
   z-index: 100;
-  letter-spacing: .2em;
+  position: fixed;
+  top: 0;
   transition: -webkit-transform .3s;
   transition: transform .3s;
   transition: transform .3s, -webkit-transform .3s;
@@ -61,18 +70,18 @@ img {
 
 @media screen and (max-width: 980px) {
   .ly_header {
-    position: absolute;
-    -webkit-transform: translateX(-185px);
-            transform: translateX(-185px);
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
   }
 }
 
-.ly_columnWrapper {
-  display: flex;
+.ly_header.is_open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
-.ly_main_container {
-  position: relative;
+.ly_container {
+  position: absolute;
   width: 100%;
 }
 
@@ -167,7 +176,28 @@ img {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding-top: 150px;
+  left: 30px;
+  letter-spacing: .2em;
+  position: absolute;
+  top: 150px;
+}
+
+@media screen and (max-width: 480px) {
+  .bl_header_inner {
+    top: 120px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .bl_header_inner {
+    top: 80px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .bl_header_inner {
+    top: 60px;
+  }
 }
 
 .el_header_list {
@@ -250,7 +280,7 @@ img {
   height: 47px;
   z-index: 200;
   left: 30px;
-  position: absolute;
+  position: fixed;
   top: 30px;
   width: 47px;
 }
@@ -306,17 +336,12 @@ img {
   width: 30px;
 }
 
-.ly_header.is_open {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-
 .el_sec_ttl {
   color: #afc9c9;
   font-family: "Marcellus", serif;
   font-size: 2rem;
   letter-spacing: .2em;
-  margin-top: 100px;
+  padding-top: 100px;
   text-align: center;
 }
 
@@ -470,12 +495,14 @@ img {
   min-height: calc(var(--vh, 1vh) * 200);
 }
 
-.hp_header_bg {
-  background-color: rgba(175, 201, 201, 0.95);
-}
-
 .hp_textTransform {
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 980px) {
+  .hp_topHeader_bg {
+    background-color: transparent;
+  }
 }
 
 /* トップページ独自のスタイル */

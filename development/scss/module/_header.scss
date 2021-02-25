@@ -4,7 +4,19 @@
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	padding-top: 150px;
+	left: 30px;
+	letter-spacing: .2em;
+	position: absolute;
+	top: 150px;
+	@media screen and (max-width: 480px) {
+		top: 120px;
+	}
+	@media screen and (max-width: 400px) {
+		top: 80px;
+	}
+	@media screen and (max-width: 350px) {
+		top: 60px;
+	}
 }
 
 .el_header_list {

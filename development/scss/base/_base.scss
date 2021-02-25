@@ -1,14 +1,19 @@
 @charset "UTF-8";
 /* base */
 /************************************************/
-*:focus {
-	outline: none;
+html {
+	height: 100%;
 }
 
 body {
 	animation: fadein 1s forwards;
 	color: $baseFont-color;
 	font-family: $font_jp;
+	height: 100%;
+	@include maxmq(tab) {
+		background-image: url(../../../public/assets/img/bg.svg);
+		background-repeat: repeat-y;
+	}
 	overflow-x: hidden;
 }
 

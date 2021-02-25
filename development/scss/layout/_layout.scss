@@ -6,24 +6,25 @@
 }
 
 .ly_header {
-	font-family: $font_en;
-	height: 100vh;
+	background-color: #afc9c9;
+	height: 100%;
 	@include maxmq(tab) {
-		position: absolute;
-		transform: translateX(-185px);
+		transform: translateX(-200px);
 	}
 	@include z-index(header);
-	letter-spacing: .2em;
+	position: fixed;
+	top: 0;
 	transition: transform .3s;
 	width: 200px;
 }
 
-// メインページ共通
-.ly_columnWrapper {
-	display: flex;
+// インナーメニュー
+.ly_header.is_open {
+	transform: translateX(0);
 }
 
-.ly_main_container {
-	position: relative; // コピーライト最下部配置のため
+// メインページ共通
+.ly_container {
+	position: absolute;
 	width: 100%;
 }
