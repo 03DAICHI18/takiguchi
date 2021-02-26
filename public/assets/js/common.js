@@ -1,15 +1,5 @@
 jQuery(document).ready(function ($) {
   // *********************
-  // ヘッダーにbodyの高さを持たせる
-  // *********************
-  // var containerHeight = $('.ly_main_container').height();
-  // if (containerHeight > "100vh") {
-  // } else {
-  //   $('.ly_header').css('height', containerHeight);
-  // }
-
-
-  // *********************
   // Topスライドショー
   // *********************
   var slideCurrent = 0;
