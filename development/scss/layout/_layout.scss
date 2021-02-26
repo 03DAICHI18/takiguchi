@@ -7,11 +7,14 @@
 
 .ly_header {
 	background-color: #afc9c9;
+	display: flex;
+	flex-direction: column;
 	height: 100%;
 	@include maxmq(tab) {
 		transform: translateX(-200px);
 	}
 	@include z-index(header);
+	justify-content: center;
 	position: fixed;
 	top: 0;
 	transition: transform .3s;
