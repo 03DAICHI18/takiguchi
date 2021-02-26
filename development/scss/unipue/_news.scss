@@ -1,0 +1,105 @@
+/* x3ページ独自のスタイル */
+/************************************************/
+.un_news {
+	margin: 0 auto;
+	padding-bottom: 150px;
+}
+
+.un_news_container {
+	display: flex;
+	margin-top: 100px;
+}
+
+.un_media {
+	margin-right: 65px;
+}
+
+.un_media:not(:first-of-type) {
+	margin-top: 32px;
+}
+
+.un_media_link {
+	display: flex;
+}
+
+.un_media_img {
+	height: 122px;
+	width: 180px;
+}
+
+.un_media_txtWrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 15px 25px;
+}
+
+.un_media_ttl {
+	font-size: rem(18);
+	font-weight: bold;
+}
+
+.un_archive {
+	color: #707070;
+	width: 160px;
+}
+
+.un_archive_ttl {
+	border-bottom: 1px solid #afc9c9;
+	padding-bottom: 11px;
+}
+
+.un_archive_date {
+	margin-top: 18px;
+}
+
+.un_news_nav {
+	margin-top: 80px;
+	padding-bottom: 150px;
+}
+.un_news_wrap {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.un_news_pageNum {
+	background-color: #afc9c9;
+	color: #fff;
+	height: 34px;
+	margin-right: 8px;
+	width: 30px;
+}
+
+.un_news_pageLine {
+	background: #707070;
+	height: 1px;
+	position: relative;
+	width: 33px;
+
+	a {
+		display: block;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.un_news_pageLine::after {
+	background: #707070;
+	content: "";
+	display: block;
+	height: 1px;
+	position: absolute;
+	right: 0;
+	transform: translate(1px , -6px) rotate(30deg);
+	width: 20px;
+}
+
+
+.un_news_pageLink {
+	align-items: center;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	width: 100%;
+}
