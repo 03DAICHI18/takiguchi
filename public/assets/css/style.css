@@ -39,10 +39,6 @@ body {
   }
 }
 
-header {
-  font-family: "Optima","Roman",serif;
-}
-
 img {
   height: auto;
   vertical-align: bottom;
@@ -212,6 +208,7 @@ img {
 
 .el_header_link {
   display: inline-block;
+  font-family: "Marcellus", serif;
   position: relative;
   text-decoration: none;
 }
