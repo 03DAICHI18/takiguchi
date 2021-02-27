@@ -1026,6 +1026,12 @@ img {
   color: #afc9c9;
 }
 
+.el_pageCurrent {
+  background-color: #fff;
+  border: 1px solid #afc9c9;
+  color: #afc9c9;
+}
+
 .un_news_pageLine {
   position: relative;
 }
