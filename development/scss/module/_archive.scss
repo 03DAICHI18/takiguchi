@@ -1,0 +1,22 @@
+.bl_archive {
+	color: #707070;
+	min-width: 160px;
+	@media screen and (max-width: 880px) {
+		margin-top: 80px;
+	}
+}
+
+.el_archive_ttl {
+	border-bottom: 1px solid #afc9c9;
+	padding-bottom: 11px;
+}
+
+.el_archive_date {
+	margin-top: 18px;
+	transition: opacity .3s;
+}
+
+.el_archive_date:hover , .el_archive_date:hover {
+	opacity: .6;
+	text-decoration: underline;
+}

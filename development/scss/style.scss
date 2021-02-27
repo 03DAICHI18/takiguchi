@@ -22,8 +22,9 @@
 @import "module/header";
 @import "module/slider";
 @import "module/hamburger";
-@import "module/sec_ttl";
+@import "module/ttl";
 @import "module/copy";
+@import "module/archive";
 
 // helper：補助スタイル  （hp_）
 @import "helper/helper";
@@ -33,6 +34,7 @@
 @import "unipue/principle";
 @import "unipue/profile";
 @import "unipue/news";
+@import "unipue/single";
 
 // program：js等のプログラムに対応するスタイル  
 // （jsで要素を取得させるクラス  js_）

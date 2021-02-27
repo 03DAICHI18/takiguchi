@@ -26,10 +26,17 @@
 	flex-basis: 267px;
 	flex-shrink: 0;
 	height: 352px;
+	@include maxmq(tab) {
+		height: 500px;
+	}
+	@include maxmq(sp) {
+		height: 352px;
+	}
 	img {
 		font-family: "object-fit: cover;";  /*IE対策*/
 		height: 100%;
 		object-fit: cover;
+		object-position: 50% 35%;
 	}
 }
 
