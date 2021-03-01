@@ -44,3 +44,10 @@ $space_endValue: 15 !default;
 		background-color: transparent;
 	}
 }
+
+// SP時改行
+@media screen and (min-width: 600px) {
+	.hp_spBr {
+		display: none;
+	}
+}
