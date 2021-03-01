@@ -1213,6 +1213,7 @@ img {
 @media screen and (max-width: 480px) {
   .un_menu_flexBox {
     font-size: 0.875rem;
+    white-space: nowrap;
     width: 90%;
   }
 }
