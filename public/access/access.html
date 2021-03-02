@@ -19,7 +19,6 @@
   <meta property="og:title" content="滝口三奈美 official HP" />
   <meta property="og:image" content="" /> <!-- サムネイル画像（絶対パス） -->
   <meta property="og:site_name" content="滝口三奈美 official HP" />
-  <meta property="og:type" content="website" /> <!-- websiteまたはblog ※TOPページ以外は"article" -->
   <meta property="og:description" content="福岡でフリーランスの美容師として活動する滝口三奈美のオフィシャルホームページです。ご予約や、メニュー料金のご確認はこちらから宜しくお願いします。" />
   <meta property="og:locale" content="ja_JP" />
 
@@ -41,9 +40,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Serif+JP&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="ly_columnWrapper">
+  <div class="ly_container un_access">
     <!-- ヘッダー -->
-    <header class="ly_header hp_header_bg hp_100vh hp_textTransform">
+    <header class="ly_header hp_textTransform">
       <ul class="bl_header_inner">
         <li class="el_header_list"><a class="el_header_link" href="../index.html">top</a></li>
         <li class="el_header_list"><a class="el_header_link" href="../principle/principle.html">principle</a></li>
@@ -64,14 +63,34 @@
       <span class="el_hamburgerBtn_line el_hamburgerBtn_lineBottom js_hamburgerBtn_lineBottom"></span>
     </button>
     <!-- メインコンテンツ -->
-    <main class="ly_main_container">
-      <div class="ly_main_inner">
-        <h1 class="el_sec_ttl hp_textTransform">principle</h1>
-        <small class="el_copy">&copy; 2021 Takiguchi Minami</small>
+    <main class="un_access_wrapper">
+      <h1 class="el_sec_ttl hp_textTransform">menu</h1>
+      <div class="un_access_schedule">
+        <p>平日/土 10:00-20:00</p>
+        <p>日/祝 10:00-19:00</p>
+      </div>
+      <address class="un_access_address">
+        <p>〒810-0001</p>
+        <p>福岡市中央区天神2-3-2<br>
+          天神アイエスビル2F<br>
+          EMANON</p>
+      </address>
+      <div class="un_access_map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d830.9257962928658!2d130.39826442922572!3d33.58705499879595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541918512c2c95b%3A0x7782b7bdea4ce773!2z44CSODEwLTAwMDEg56aP5bKh55yM56aP5bKh5biC5Lit5aSu5Yy65aSp56We77yS5LiB55uu77yT4oiS77ySIOWkqeelnuOCouOCpOOCqOOCueODk-ODqyAyRg!5e0!3m2!1sja!2sjp!4v1614692350814!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="un_access_imgWrap">
+        <div class="un_access_img"><img src="../assets/img/store/store006.jpg" alt=""></div>
+        <div class="un_access_img"><img src="../assets/img/human/human03.jpg" alt=""></div>
+        <div class="un_access_img"><img src="../assets/img/store/store001.jpg" alt=""></div>
+      </div>
+      <div class="un_menu_btnWrap">
+        <a href="https://stekina.com/reserve/MPWZ-2VSV/menu" target="_blank" rel="noopener noreferrer" class="el_btn el_btn_main un_menu_btn">reserve</a>
       </div>
     </main>
+    <footer class="ly_footer">
+      <small class="el_copy">&copy; 2021 Takiguchi Minami</small>
+    </footer>
   </div>
-  <!-- <div class="el_btn el_btn_main"><a href="https://stekina.com/reserve/MPWZ-2VSV/menu">reserve</a></div> -->
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script src="../assets/js/common.js"></script>
   <!-- objectFit IE -->
@@ -83,6 +102,7 @@
       const vh = window.innerHeight * 0.01;
       document.documentElement.style.setProperty('--vh', `${vh}px`);
     }
+
     let vw = window.innerWidth;
     window.addEventListener('resize', () => {
       if (vw === window.innerWidth) {
