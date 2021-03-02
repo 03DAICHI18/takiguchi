@@ -28,9 +28,11 @@ $space_endValue: 15 !default;
 
 // 100vh
 .hp_100vh {
+	height: 100vh;
 	min-height: calc(var(--vh, 1vh) * 100);
 }
 .hp_200vh {
+	height: 200vh;
 	min-height: calc(var(--vh, 1vh) * 200);
 }
 
