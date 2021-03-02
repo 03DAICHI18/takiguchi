@@ -71,3 +71,12 @@
 .un_top_bg  .el_header_link::after {
 	background: #fff;
 }
+
+// *******************************
+// ロゴ
+.el_header_img {
+	transition: transform .3s;
+}
+.el_header_img:hover , .el_header_img:active {
+	transform: rotate(360deg);
+}

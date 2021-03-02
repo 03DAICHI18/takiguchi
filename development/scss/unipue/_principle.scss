@@ -16,6 +16,7 @@
 
 
 .un_principle_txt {
+	animation: fadein 1.5s ease-in forwards;
 	color: #707070;
 	font-size: rem(18);
 	@include maxmq(sp) {
@@ -23,6 +24,30 @@
 	}
 	letter-spacing: .2em;
 	line-height: 30px;
+	opacity: 0;
+}
+
+.fade1 {
+	animation-delay: 0;
+}
+.fade2 {
+	animation-delay: .5s;
+}
+.fade3 {
+	animation-delay: 1.5s;
+}
+.fade4 {
+	animation-delay: 2.5s;
+}
+
+// フェードインアニメーション
+@keyframes fadein {
+	100% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .un_principle_txt:first-of-type {
