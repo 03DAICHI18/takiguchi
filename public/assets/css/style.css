@@ -95,6 +95,12 @@ img {
   transition: background-color .3s , color .3s;
 }
 
+@media screen and (max-width: 480px) {
+  .el_btn {
+    padding: 12px 20px;
+  }
+}
+
 .el_btn::after {
   border-right: 1px solid #fff;
   border-top: 1px solid #fff;
@@ -149,6 +155,12 @@ img {
   color: #fff;
   padding: 12px 20px;
   transition: background-color .3s , color .3s;
+}
+
+@media screen and (max-width: 480px) {
+  .el_btn_main {
+    padding: 14px 20px;
+  }
 }
 
 .el_btn_main::after {
@@ -540,6 +552,12 @@ img {
   .un_logo_container {
     height: 222px;
     width: 260px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .un_logo_container:hover {
+    cursor: pointer;
   }
 }
 

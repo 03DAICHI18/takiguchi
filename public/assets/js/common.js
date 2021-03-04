@@ -21,7 +21,7 @@ jQuery(document).ready(function ($) {
         slideCurrent++;
         changeslide();
       };
-    }, 3000);
+    }, 2500);
   }
   startTimer();
 
@@ -31,7 +31,7 @@ jQuery(document).ready(function ($) {
   // *********************
   var btn = $('.js_hamburgerBtn_lineTop , .js_hamburgerBtn_lineMiddle  , .js_hamburgerBtn_lineBottom');
   var menu = $('.ly_header');
-  $('.js_hamburgerBtn').on('click', function () {
+  $('.js_hamburgerBtn , .js_logo_container').on('click', function () {
     btn.toggleClass('is_open');
     menu.toggleClass('is_open');
   })

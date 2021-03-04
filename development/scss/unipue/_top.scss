@@ -69,6 +69,12 @@
 	width: 470px;
 }
 
+@include maxmq(tab) {
+	.un_logo_container:hover {
+		cursor: pointer;
+	}
+}
+
 .un_logo_container::after {
 	border: 4px solid #afc9c9;
 	content: "";
