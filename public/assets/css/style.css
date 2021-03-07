@@ -643,8 +643,9 @@ img {
           animation: fadein 1.5s ease-in forwards;
   color: #707070;
   font-size: 1.125rem;
-  letter-spacing: .2em;
-  line-height: 30px;
+  font-weight: 400;
+  line-height: 1.66667;
+  letter-spacing: 0.2em;
   opacity: 0;
 }
 

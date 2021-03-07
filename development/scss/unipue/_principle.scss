@@ -18,12 +18,10 @@
 .un_principle_txt {
 	animation: fadein 1.5s ease-in forwards;
 	color: #707070;
-	font-size: rem(18);
 	@include maxmq(sp) {
 		font-size: rem(14);
 	}
-	letter-spacing: .2em;
-	line-height: 30px;
+	@include f_around(18 , 30 , 400 , 200);
 	opacity: 0;
 }
 
