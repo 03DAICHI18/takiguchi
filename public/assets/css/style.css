@@ -563,8 +563,9 @@ img {
 
 @media screen and (max-width: 480px) {
   .un_logo_container {
-    height: 222px;
-    width: 260px;
+    border: 2px solid #fff;
+    height: 160px;
+    width: 180px;
   }
 }
 
@@ -587,13 +588,14 @@ img {
 
 @media screen and (max-width: 480px) {
   .un_logo_container::after {
-    left: 15px;
-    top: 16px;
+    border: 2px solid #afc9c9;
+    left: 10px;
+    top: 11px;
   }
 }
 
 .un_logo {
-  height: 218px;
+  height: 212px;
   width: 358px;
 }
 
@@ -605,7 +607,7 @@ img {
 
 @media screen and (max-width: 480px) {
   .un_logo {
-    height: 190px;
+    height: calc(212 * .6 * 1px);
   }
 }
 

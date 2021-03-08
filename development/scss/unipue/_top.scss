@@ -58,8 +58,9 @@
 		width: 400px;
 	}
 	@include maxmq(sp) {
-		height: 222px;
-		width: 260px;
+		border: 2px solid #fff;
+		height: 160px;
+		width: 180px;
 	}
 	justify-content: center;
 	left: 50%;
@@ -81,8 +82,9 @@
 	display: block;
 	height: 100%;
 	@include maxmq(sp) {
-		left: 15px;
-		top: 16px;
+		border: 2px solid #afc9c9;
+		left: 10px;
+		top: 11px;
 	}
 	left: 28px;
 	position: absolute;
@@ -91,12 +93,12 @@
 }
 
 .un_logo {
-	height: 218px;
+	height: 212px;
 	@include maxmq(pc) {
 		width: 80%;
 	}
 	@include maxmq(sp) {
-		height: 190px;
+		height: calc(212 * .6 * 1px);
 	}
 	width: 358px;
 	img {
