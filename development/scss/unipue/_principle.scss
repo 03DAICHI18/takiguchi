@@ -2,12 +2,12 @@
 /************************************************/
 .un_principle_inner {
 	@include maxmq(tab) {
-		padding: 0 15px 350px 30px;
+		padding: 0 15px 150px 30px;
 		width: 85%;
 	}
 	@include maxmq(sp) {
-		padding: 0 15px 150px 30px;
-		width: 85%;
+		padding: 0 15px 100px 30px;
+		width: 90%;
 	}
 	margin: 0 auto;
 	max-width: 600px;
@@ -29,13 +29,19 @@
 	animation-delay: 0;
 }
 .fade2 {
-	animation-delay: .5s;
+	animation-delay: 1s;
 }
 .fade3 {
-	animation-delay: 1.5s;
+	animation-delay: 2s;
 }
 .fade4 {
-	animation-delay: 2.5s;
+	animation-delay: 3s;
+}
+.fade5 {
+	animation-delay: 4s;
+}
+.fade6 {
+	animation-delay: 5s;
 }
 
 // フェードインアニメーション
@@ -51,6 +57,6 @@
 .un_principle_txt:first-of-type {
 	margin-top: 100px;
 }
-.un_principle_txt:nth-of-type(3) {
+.un_principle_txt {
 	margin-top: 55px;
 }

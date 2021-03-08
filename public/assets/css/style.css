@@ -633,15 +633,15 @@ img {
 
 @media screen and (max-width: 980px) {
   .un_principle_inner {
-    padding: 0 15px 350px 30px;
+    padding: 0 15px 150px 30px;
     width: 85%;
   }
 }
 
 @media screen and (max-width: 480px) {
   .un_principle_inner {
-    padding: 0 15px 150px 30px;
-    width: 85%;
+    padding: 0 15px 100px 30px;
+    width: 90%;
   }
 }
 
@@ -668,18 +668,28 @@ img {
 }
 
 .fade2 {
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .fade3 {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .fade4 {
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.fade5 {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.fade6 {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 
 @keyframes fadein {
@@ -695,7 +705,7 @@ img {
   margin-top: 100px;
 }
 
-.un_principle_txt:nth-of-type(3) {
+.un_principle_txt {
   margin-top: 55px;
 }
 
@@ -703,7 +713,7 @@ img {
 /************************************************/
 .un_profile_inner {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 660px;
   padding-bottom: 150px;
 }
 
@@ -716,20 +726,29 @@ img {
 
 @media screen and (max-width: 480px) {
   .un_profile_inner {
-    max-width: 80%;
+    max-width: 90%;
+  }
+}
+
+.un_profile_name {
+  font-size: 1.5rem;
+  letter-spacing: .2em;
+  line-height: calc(38 / 24 * 100%);
+  margin-top: 94px;
+  text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+  .un_profile_name {
+    margin-top: 58px;
   }
 }
 
 .un_profile_block {
+  align-items: flex-end;
   display: flex;
   justify-content: space-between;
-  margin-top: 94px;
-}
-
-@media screen and (max-width: 980px) {
-  .un_profile_block {
-    margin-top: 58px;
-  }
+  margin-top: 50px;
 }
 
 .un_profile_img {
@@ -762,16 +781,9 @@ img {
 
 .un_profile_txtBlock {
   display: flex;
-  flex-basis: 250px;
+  flex-basis: 340px;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.un_profile_name {
-  font-size: 1.5rem;
-  letter-spacing: .2em;
-  line-height: calc(38 / 24 * 100%);
-  text-align: center;
 }
 
 .un_profile_name::after {
@@ -813,6 +825,14 @@ img {
     font-size: 0.875rem;
     line-height: calc(30 / 16 * 100%);
   }
+}
+
+.un_profile_txt {
+  margin-top: 20px;
+}
+
+.un_profile_txt:last-of-type {
+  margin-bottom: 20px;
 }
 
 /* newsページ独自のスタイル */
