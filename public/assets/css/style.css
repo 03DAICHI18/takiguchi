@@ -359,8 +359,8 @@ img {
 }
 
 .el_hamburgerBtn_lineTop.is_open {
-  -webkit-transform: rotate(225deg) translatex(-6px) translateY(-11px);
-          transform: rotate(225deg) translatex(-6px) translateY(-11px);
+  -webkit-transform: rotate(225deg) translatex(-7px) translateY(-11px);
+          transform: rotate(225deg) translatex(-7px) translateY(-11px);
 }
 
 .el_hamburgerBtn_lineMiddle.is_open {
@@ -368,8 +368,8 @@ img {
 }
 
 .el_hamburgerBtn_lineBottom.is_open {
-  -webkit-transform: rotate(-225deg) translatex(-6px) translateY(11px);
-          transform: rotate(-225deg) translatex(-6px) translateY(11px);
+  -webkit-transform: rotate(-225deg) translatex(-7px) translateY(11px);
+          transform: rotate(-225deg) translatex(-7px) translateY(11px);
   width: 30px;
 }
 
