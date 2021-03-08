@@ -307,6 +307,11 @@ img {
      object-fit: cover;
 }
 
+.el_slide_list:nth-of-type(4) img {
+  -o-object-position: 40% 50%;
+     object-position: 40% 50%;
+}
+
 .bl_hamburgerBtn {
   display: block;
   height: 47px;
