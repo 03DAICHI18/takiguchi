@@ -640,7 +640,7 @@ img {
 
 @media screen and (max-width: 480px) {
   .un_principle_inner {
-    padding: 0 15px 100px 30px;
+    padding: 0 15px 70px 30px;
     width: 90%;
   }
 }
@@ -703,6 +703,12 @@ img {
 
 .un_principle_txt:first-of-type {
   margin-top: 100px;
+}
+
+@media screen and (max-width: 480px) {
+  .un_principle_txt:first-of-type {
+    margin-top: 70px;
+  }
 }
 
 .un_principle_txt {

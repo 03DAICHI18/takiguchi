@@ -6,7 +6,7 @@
 		width: 85%;
 	}
 	@include maxmq(sp) {
-		padding: 0 15px 100px 30px;
+		padding: 0 15px 70px 30px;
 		width: 90%;
 	}
 	margin: 0 auto;
@@ -55,8 +55,12 @@
 }
 
 .un_principle_txt:first-of-type {
+	@include maxmq(sp) {
+		margin-top: 70px;
+	}
 	margin-top: 100px;
 }
+
 .un_principle_txt {
 	margin-top: 55px;
 }
