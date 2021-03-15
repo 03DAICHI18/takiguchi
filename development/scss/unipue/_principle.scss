@@ -2,14 +2,15 @@
 /************************************************/
 .un_principle_inner {
 	@include maxmq(tab) {
-		padding: 0 15px 150px 30px;
+		margin: 0 auto;
+		padding: 0 15px 150px;
 		width: 85%;
 	}
 	@include maxmq(sp) {
 		padding: 0 15px 70px 30px;
 		width: 90%;
 	}
-	margin: 0 auto;
+	margin: 0 auto 0 30vw;
 	max-width: 600px;
 	padding-bottom: 120px;
 }

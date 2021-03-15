@@ -9,7 +9,7 @@
 		max-width: 90%;
 	}
 	margin: 0 auto;
-	max-width: 660px;
+	max-width: 600px;
 	padding-bottom: 150px;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .un_profile_img {
-	flex-basis: 267px;
+	flex-basis: 220px;
 	flex-shrink: 0;
 	height: 352px;
 	@include maxmq(tab) {
@@ -97,7 +97,6 @@
 
 .un_profile_txt {
 	margin-top: 20px;
-	// text-align: center;
 }
 
 .un_profile_txt:last-of-type {
