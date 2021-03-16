@@ -27,7 +27,7 @@ body {
     opacity: 0;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 
@@ -36,7 +36,7 @@ body {
     opacity: 0;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 
@@ -637,8 +637,8 @@ img {
 }
 
 .un_principle_txt {
-  -webkit-animation: fadein 1.5s ease-in forwards;
-          animation: fadein 1.5s ease-in forwards;
+  -webkit-animation: fade 1.5s ease-in forwards;
+          animation: fade 1.5s ease-in forwards;
   color: #707070;
   font-size: 1.125rem;
   font-weight: 400;
@@ -683,9 +683,18 @@ img {
           animation-delay: 5s;
 }
 
-@keyframes fadein {
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
   }
   100% {
     opacity: 1;

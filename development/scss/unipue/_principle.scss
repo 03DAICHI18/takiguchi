@@ -17,7 +17,7 @@
 
 
 .un_principle_txt {
-	animation: fadein 1.5s ease-in forwards;
+	animation: fade 1.5s ease-in forwards;
 	color: #707070;
 	@include maxmq(sp) {
 		font-size: rem(14);
@@ -46,9 +46,9 @@
 }
 
 // フェードインアニメーション
-@keyframes fadein {
-	100% {
-		opacity: 1;
+@keyframes fade {
+	0% {
+		opacity: 0;
 	}
 	100% {
 		opacity: 1;
