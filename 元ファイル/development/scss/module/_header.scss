@@ -1,13 +1,5 @@
 /* blockModule */
 /************************************************/
-// トップページのみ高さ調整
-.un_top_bg .bl_header_inner {
-	height: 340px;
-	@include maxmq(sp) {
-		height: 57%;
-	}
-}
-
 .bl_header_inner {
 	align-items: center;
 	display: flex;
