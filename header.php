@@ -31,9 +31,9 @@
   <!-- <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@h4iPIeXdSeyElke" /> -->
 
-  <!-- ファビコン -->
-  <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/favicons/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/favicons/apple-touch-icon-180x180.png">
+  <!-- ファビコン WordPress管理画面から設定 -->
+  <!-- <link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png"> -->
 
   <!-- 外部ファイル読み込み -->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/destyle.css">
