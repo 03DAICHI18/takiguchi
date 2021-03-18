@@ -1,5 +1,5 @@
     <!-- ハンバーガーボタン トップページでは白色を読み込む-->
-    <?php if (is_front_page() ||  is_home()) : ?>
+    <?php if (is_front_page()) : ?>
       <button type="button" class="bl_hamburgerBtn js_hamburgerBtn">
         <span class="el_hamburgerBtn_line el_hamburgerBtn_lineTop js_hamburgerBtn_lineTop un_bg_white"></span>
         <span class="el_hamburgerBtn_line el_hamburgerBtn_lineMiddle js_hamburgerBtn_lineMiddle un_bg_white"></span>

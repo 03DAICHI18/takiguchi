@@ -10,7 +10,7 @@
       <a class="el_header_link <?php if (is_page('profile')) echo 'el_current'; ?>" href="<?php echo esc_url(home_url('/profile/')); ?>">profile</a>
     </li>
     <li class="el_header_list">
-      <a class="el_header_link <?php if (is_page('news')) echo 'el_current'; ?>" href="<?php echo esc_url(home_url('/news/')); ?>">news</a>
+      <a class="el_header_link <?php if (is_home() || is_archive() || is_single()) echo 'el_current'; ?>" href="<?php echo esc_url(home_url('/news/')); ?>">news</a>
     </li>
     <li class="el_header_list">
       <a class="el_header_link <?php if (is_page('menu')) echo 'el_current'; ?>" href="<?php echo esc_url(home_url('/menu/')); ?>">menu</a>
