@@ -1,0 +1,42 @@
+.el_sec_ttl {
+	color: $accent-color;
+	font-family: $font_en;
+	font-size: rem(32);
+	@include maxmq(sp) {
+		font-size: rem(24);
+	}
+	letter-spacing: .2em;
+	padding-top: 100px;
+	text-align: center;
+}
+
+//  ブログ記事ページ
+.single_ttl {
+	display: flex;
+	font-family: $font_jp;
+	font-size: rem(30);
+	@include maxmq(sp) {
+		font-size: rem(24);
+	}
+	@include maxmq(tab) {
+		justify-content: flex-start;
+		margin: 0 auto;
+		max-width: 600px;
+	}
+	justify-content: flex-start;
+	letter-spacing: .2em;
+	line-height: calc(31 / 30 * 100%);
+	padding-top: 100px;
+}
+
+.single_ttl::before {
+	background-color: #afc9c9;
+	content: "";
+	display: inline-block;
+	// height: 35px;
+	@include maxmq(sp) {
+		height: 24px;
+	}
+	margin-right: .7em;
+	width: 6px;
+}
