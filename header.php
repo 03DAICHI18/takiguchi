@@ -27,13 +27,13 @@
   <meta property="og:description" content="福岡でフリーランスの美容師として活動する滝口三奈美のオフィシャルホームページです。ご予約や、メニュー料金のご確認はこちらから宜しくお願いします。" />
   <meta property="og:locale" content="ja_JP" />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@h4iPIeXdSeyElke" />
+  <!-- Twitter OGPプラグインで設定 -->
+  <!-- <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@h4iPIeXdSeyElke" /> -->
 
   <!-- ファビコン -->
-  <link rel="icon" type="image/x-icon" href="favicons/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/favicons/apple-touch-icon-180x180.png">
 
   <!-- 外部ファイル読み込み -->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/destyle.css">
