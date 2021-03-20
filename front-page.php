@@ -6,6 +6,10 @@
     <div class="un_logo_container js_logo_container">
       <h1 class="un_logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/logo/top.png" alt="takiguchiminami hairstylist"></h1>
     </div>
+
+    <a class="el_header_link" href="<?php echo esc_url(home_url('/holiday/')); ?>">お休み情報</a>
+
+
     <!-- ヘッダー -->
     <header class="ly_header hp_textTransform hp_topHeader_bg">
       <ul class="bl_header_inner">

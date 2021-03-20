@@ -28,7 +28,7 @@
                     ?>
                   </p>
                   <div class="un_media_txtWrap">
-                    <time datetime="<?php echo the_time('Y-m-d'); ?>"><?php echo the_time('Y-m-d'); ?></time>
+                    <time class="un_media_time" datetime="<?php echo the_time('Y-m-d'); ?>"><?php echo the_time('Y-m-d'); ?></time>
                     <h2 class="un_media_ttl"><?php the_short_title(30); ?></h2>
                     <div class="un_media_txt"><?php echo the_excerpt(20); ?></div>
                   </div>
