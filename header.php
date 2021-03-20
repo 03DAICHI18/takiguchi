@@ -10,10 +10,10 @@
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="福岡でフリーランスの美容師として活動する滝口三奈美のオフィシャルホームページです。ご予約や、メニュー料金のご確認はこちらから宜しくお願いします。" />
+  <!-- <meta name="description" content="福岡でフリーランスの美容師として活動する滝口三奈美のオフィシャルホームページです。ご予約や、メニュー料金のご確認はこちらから宜しくお願いします。" /> -->
 
   <!-- Windows用デスクトップ用タイル設定 -->
-  <meta name="msapplication-TileImage" content="https://03daichi18.github.io/takiguchi/public/assets/img/human/human01.jpg" />
+  <meta name="msapplication-TileImage" content="" />
   <meta name="ç" content="#afc9c9" />
 
   <!-- SNS共通 OGPプラグインで設定-->

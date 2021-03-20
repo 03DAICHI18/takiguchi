@@ -428,7 +428,7 @@ img {
 	min-width: 160px;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 980px) {
 	.bl_archive {
 		margin-top: 80px;
 	}
@@ -1163,7 +1163,13 @@ img {
 @media screen and (max-width: 980px) {
 	.single_wrapper {
 		margin: 0 auto;
-		padding: 0 15px 150px 30px;
+		padding: 0 30px 150px 30px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.single_wrapper {
+		margin: 0 auto;
+		padding: 0 30px 120px 30px;
 	}
 }
 
@@ -1175,7 +1181,8 @@ img {
 @media screen and (max-width: 980px) {
 	.single_contaner {
 		flex-direction: column;
-		margin: 50px auto;
+		font-size: 14px;
+		margin: 50px auto 0;
 		max-width: 600px;
 	}
 }
@@ -1192,13 +1199,11 @@ img {
 }
 
 .single_img {
-	height: 500px;
 	margin-bottom: 4em;
 }
 
 @media screen and (max-width: 480px) {
 	.single_img {
-		height: 300px;
 		margin-bottom: 3em;
 	}
 }
