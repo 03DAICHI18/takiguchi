@@ -70,17 +70,16 @@ function my_archives_link($html)
 add_filter('get_archives_link', 'my_archives_link');
 
 // objectFit
-function custom_print_scripts()
+function my_object_fit_enqueue_scripts()
 {
-  wp_enqueue_script('ofi-js', '//cdnjs.cloudflare.com/ajax/libs/object-fit-images⁄3.2.4/ofi.min.js', '', '', true);
+  global $is_IE, $is_edge;
+  if ($is_IE || $is_edge) {
+    wp_enqueue_script(
+      'object-fit',
+      'https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.min.js',
+      array(),
+      false,
+      true
+    );
+  }
 }
-add_action('wp_print_scripts', 'custom_print_scripts');
-// ブラウザ取得判定するのに小文字にする
-$browser = strtolower($_SERVER['HTTP_USER_AGENT']);
-// ブラウザ判定
-if (strstr($browser, 'trident') || strstr($browser, 'msie')) {
-?>
-  <!-- ここにIEだけに読み込ませたいものを書きます｡ -->
-<?php
-}
-?>
