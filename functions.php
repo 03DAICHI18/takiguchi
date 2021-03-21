@@ -68,3 +68,19 @@ function my_archives_link($html)
   return $html;
 }
 add_filter('get_archives_link', 'my_archives_link');
+
+// objectFit
+function custom_print_scripts()
+{
+  wp_enqueue_script('ofi-js', '//cdnjs.cloudflare.com/ajax/libs/object-fit-images⁄3.2.4/ofi.min.js', '', '', true);
+}
+add_action('wp_print_scripts', 'custom_print_scripts');
+// ブラウザ取得判定するのに小文字にする
+$browser = strtolower($_SERVER['HTTP_USER_AGENT']);
+// ブラウザ判定
+if (strstr($browser, 'trident') || strstr($browser, 'msie')) {
+?>
+  <!-- ここにIEだけに読み込ませたいものを書きます｡ -->
+<?php
+}
+?>

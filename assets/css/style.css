@@ -17,7 +17,7 @@ body {
 
 @media screen and (max-width: 980px) {
 	body {
-		background-image: url(../../../public/assets/img/bg/bg.svg);
+		background-image: url(../img/bg/bg.svg);
 		background-repeat: repeat-y;
 	}
 }
@@ -1459,4 +1459,47 @@ img {
 		margin: 0 auto;
 		padding: 0 15px 0 30px;
 	}
+}
+
+/* holidayページ独自のスタイル */
+/************************************************/
+.un_holiday_wrapper {
+	line-height: calc(27 / 16);
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 0 0 150px 0;
+	text-align: center;
+}
+
+.calendar {
+	margin-top: 50px;
+	width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+	.un_holiday_wrapper {
+		max-width: 600px;
+		padding: 0 15px 150px 30px;
+	}
+}
+
+/* 以下、プラグインカスタマイズ */
+#xo-event-calendar-1 {
+	font-family: "Noto Serif JP", serif;
+}
+.xo-event-calendar tbody tr {
+	height: 60px;
+}
+
+@media screen and (max-width: 600px) {
+	.xo-event-calendar tbody tr {
+		height: 30px;
+	}
+}
+
+.calendar .xo-event-calendar table.xo-month .month-header {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 20px;
 }

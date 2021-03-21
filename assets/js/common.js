@@ -35,6 +35,4 @@ jQuery(document).ready(function ($) {
     btn.toggleClass('is_open');
     menu.toggleClass('is_open');
   })
-
-
 });

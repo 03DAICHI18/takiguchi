@@ -18,6 +18,9 @@
     <li class="el_header_list">
       <a class="el_header_link <?php if (is_page('access')) echo 'el_current'; ?>" href="<?php echo esc_url(home_url('/access/')); ?>">access</a>
     </li>
+    <li class="el_header_list">
+      <a class="el_header_link <?php if (is_page('holiday')) echo 'el_current'; ?>" href="<?php echo esc_url(home_url('/holiday/')); ?>">holiday</a>
+    </li>
     <li class="el_header_list el_header_img">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/logo/scissors.svg" alt="">
     </li>
