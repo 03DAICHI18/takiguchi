@@ -18,9 +18,9 @@
           <ul>
             <li class="un_profile_txt">出身地/長崎県</li>
             <li class="un_profile_txt">生年月日/1982.11.12</li>
-            <li class="un_profile_txt">18歳〜地元の長崎から福岡へ<br>大村美容専門学校に通う</li>
-            <li class="un_profile_txt">20歳〜福岡市天神「プルーヴ」に在籍<br>30歳から8年間店長を務める</li>
-            <li class="un_profile_txt">38歳〜福岡市天神シェアサロン「エマノン」にて独立</li>
+            <li class="un_profile_txt">2001.3〜地元の長崎から福岡へ<br>大村美容専門学校に通う</li>
+            <li class="un_profile_txt">2003.4〜福岡市天神「プルーヴ」に在籍<br>30歳から8年間店長を務める</li>
+            <li class="un_profile_txt">2020.11〜〜福岡市天神シェアサロン「エマノン」にて独立</li>
           </ul>
           <a href="https://www.instagram.com/minamitakiguchi" target="_blank" rel="noopener noreferrer" class="el_btn el_btn_main un_instagram_btn">instagram</a>
         </div>
