@@ -14,7 +14,7 @@
 
   <!-- 外部ファイル読み込み -->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/destyle.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css?202103212150">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css?20210322">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Serif+JP&display=swap" rel="stylesheet">
   <!-- wpのデフォルトで書いているjQueryを読み込まないようにする -->
